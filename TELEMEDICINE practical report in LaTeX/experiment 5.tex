@@ -1,0 +1,93 @@
+\documentclass[100pt]{article}
+\title{Experiment - 5} % Title
+\date{23 feb.2017} % Date for the report
+\usepackage{graphicx}
+\graphicspath{ {E:/HEALTHRECORD.JPG} }
+\graphicspath{ {E:/HOSPITALS.JPG} }
+\graphicspath{ {E:/INNER JOIN.JPG} }
+\graphicspath{ {E:/LEFT JOIN.JPG} }
+\graphicspath{ {E:/RIGHT JOIN.JPG} }
+
+\begin{document}
+		\maketitle % Insert the title, author and date
+	\section{Aim}
+    To study aboutSQL joins.
+	\section{Software used}
+	MySQL Workbench
+	\section{Theory}
+	A SQL join is a Structured Query Language (SQL) instruction to combine data from two sets of data (e.g. two tables).Suppose we are running a store and would like to record information about your customers and their orders. By using a relational database, we can save this information as two tables that represent two distinct entities: customers and orders.\\
+	
+	Here are different types of SQL joins - \\
+	      	\begin{tabular}{l r}
+	      1.(INNER) JOIN\\
+	      2.LEFT(OUTER) JOIN\\
+	      3.RIGHT(OUTER) JOIN\\
+	      4.FULL JOIN\\
+	       \end{tabular}
+	Detailed explanation of each of them are as follows \\
+	
+   \textbf{(1) INNER JOIN} - \\
+   The INNER JOIN keyword selects records that have matching values in both tables.\\
+   Syntex is as follows-\\
+   
+         SELECT column_name(s)\\
+         FROM table1\\
+         INNER JOIN table2 ON table1.column_name = table2.column_name;\\
+         
+   \textbf{(2) LEFT(OUTER) JOIN} - \\
+   The LEFT JOIN keyword returns all records from the left table (table1), and the matched records from the right table (table2). The result is NULL from the right side, if there is no match. Syntex is given as - \\
+    
+         SELECT column_name(s)\\
+         FROM table1\\
+         LEFT JOIN table2 ON table1.column_name = table2.column_name;\\
+         
+    \textbf{(3) RIGHT(OUTER) JOIN} - \\
+    The RIGHT JOIN keyword returns all records from the right table (table2), and the matched records from the left table (table1). The result is NULL from the left side, when there is no match. Syntex is given as - \\
+    
+        SELECT column_name(s)\\
+        FROM table1\\
+        RIGHT JOIN table2 ON table1.column_name = table2.column_name;\\
+        
+    \textbf{(4) full join} - \\
+    The FULL OUTER JOIN keyword return all records when there is a match in either left (table1) or right (table2) table records.Syntex is as follows-\\
+    
+        SELECT column_name(s)\\
+        FROM table1\\
+        FULL OUTER JOIN table2 ON table1.column_name = table2.column_name;\\            
+   
+    
+    	\section{Procedure}
+    	1. Open MySQL workbench.\\
+    	2. Go to file option and open a new Query Tab.\\
+    	3. Write syntex for database creating as follows - \\
+    	
+    	\textbf{ CREATE DATABASE Database name }\\
+    	
+    	Database name should be unique and max upto 128 characters.\\
+    	for example-\\
+    	CREATE DATABASE MOHIT\\
+
+    	4.Write syntex to create 1 TABLE namely HEALTHRECORD.\\
+    	5.Write syntex to another TABLE namely HOSPITALS.\\
+    	6.Perform different SQL joins commands on these two TABLES.\\
+    	
+    \begin{flushleft}
+    		    \includegraphics{E:/HEALTHRECORD.JPG}\\
+    	
+    	
+              	\includegraphics{E:/HOSPITALS.JPG}\\
+    	
+    	
+    	        \includegraphics{E:/INNER JOIN.JPG}\\
+    	
+    	
+    	        \includegraphics{E:/LEFT JOIN.JPG}\\
+    	
+    	
+    	        \includegraphics{E:/RIGHT JOIN.JPG}\\
+    \end{flushleft}
+    	
+    	
+    	\section{Result}
+    	Two TABLEs namely HEALTHRECORD & HOSPITALS are created and different joins  are performed successfully.
+    \end{document}

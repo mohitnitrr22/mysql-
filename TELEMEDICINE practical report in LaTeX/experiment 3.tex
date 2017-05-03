@@ -1,0 +1,118 @@
+\documentclass[100pt]{article}
+\title{Experiment - 3} % Title
+\date{16 feb.2017} % Date for the report
+\usepackage{graphicx}
+\graphicspath{ {E:/INSERT.JPG} }
+\graphicspath{ {E:/ORDER BY.JPG} }
+\graphicspath{ {E:/SELECT FROM.JPG} }
+\graphicspath{ {E:/SELECT LIKE.JPG} }
+\graphicspath{ {E:/ALTER.JPG} }
+
+\begin{document}
+		\maketitle % Insert the title, author and date
+    \section{Aim}
+    To study about MySQL TABLE and its properties.
+	\section{Software used}
+	MySQL Workbench
+	\section{Theory}
+    MySQL creates, configures, and communicates with databases, where a database is an organized collection of data.At its simplest, a database will consist of tables.Tables contain records (sometimes called rows), and records contain fields (sometimes called columns).\\
+    For example - \\
+           \textbf{ CREATE TABLE STDINFO( SNO int(10),NAME char(30),CITY char(30),AGE int(10),GEN char(10),MARKS int(20)); } \\
+   
+   
+    There are some MySQL commands related to TABLE, that are as follows-\\
+    
+    \textbf{(1)INSERT INTO}-The INSERT INTO statement is used to insert new records in a table. The symple syntex is given as-\\
+       
+              \begin{center}
+              	INSERT INTO table name (column1, column2, column3, ...)\\
+               VALUES (value1, value2, value3, ...);\\
+              \end{center}
+           
+    \textbf{(2)ORDER BY} -The ORDER BY keyword sorts the records in ascending order by default. To sort the records in descending order, use the DESC keyword.Syentex is as follows\\
+       
+              \begin{center}
+              	 SELECT column1, column2, ...\\
+                 FROM table_name\\
+                 ORDER BY column1, column2, ... ASC|DESC;\\
+              \end{center}
+   
+   \textbf{(3)UPDATE} - There may be a requirement where existing data in a MySQL table needs to be modified. You can do so by using SQL UPDATE command. This will modify any field value of any MySQL table.Syntex is as follows-\\
+   
+             \begin{center}
+             	  UPDATE table_name SET field1=new-value1, field2=new-value2\\
+                  [WHERE Clause]\\
+             \end{center}
+      
+   \textbf{(4)SELECT FROM} - The SELECT statement is used to select data from a database.Syntex is given below-\\
+   
+               \begin{center}
+               	SELECT column1, column2, ...\\
+           	    FROM table_name;\\
+               \end{center}
+   	
+   \textbf{(5)SELECT WHERE} - The WHERE clause is used to filter records.The WHERE clause is used to extract only those records that fulfill a specified condition.\\
+   
+               \begin{center}
+               	SELECT column1, column2, ...\\
+                FROM table_name\\
+                WHERE condition;\\
+               \end{center}
+ 
+   \textbf{(6)SELECT LIKE} - LIKE, is a wildcard matching a single character.\\
+   
+             \begin{center}
+             	 SELECT * FROM batches 
+                 WHERE FilePath LIKE '%Parker\_Apple\_Ben\_20-10-1830\\\\%'
+             \end{center}
+   
+   \textbf{(7)ALTER} - The ALTER TABLE statement is used to add, delete, or modify columns in an existing table. Syntex is given below - \\
+   
+             \begin{center}
+             	 ALTER TABLE table_name\\
+                 ADD/DROP/ALTER column_name datatype;\\
+             \end{center}
+              
+    \textbf{(8)DROP} - The MySQL DROP TABLE statement allows you to remove or delete a table from the MySQL database. Syntex is as follows-\\
+    
+            \begin{center}
+            	  DROP TABLE table_name;
+            \end{center}
+    
+    
+    	\section{Procedure}
+    	1. Open MySQL workbench.\\
+    	2. Go to file option and open a new Query Tab.\\
+    	3. Write syntex for database creating as follows - \\
+    	
+    	\textbf{ CREATE DATABASE Database name }\\
+    	
+    	Database name should be unique and max upto 128 characters.\\
+    	for example-\\
+    	CREATE DATABASE MOHIT\\
+    	4.Write syntex to create TABLE.\\
+    	5.Perform different MySQL commands related to TABLE.\\
+    	
+    
+    		    \includegraphics{E:/INSERT.JPG}\\
+    	
+    	
+              	\includegraphics{E:/ORDER BY.JPG}\\
+    	
+    	\begin{flushleft}
+    		
+    
+    	        \includegraphics{E:/SELECT FROM.JPG}\\
+    	
+    	
+    	        \includegraphics{E:/SELECT LIKE.JPG}\\
+    	
+    \end{flushleft}
+
+    	        \includegraphics{E:/ALTER.JPG}\\
+    
+    	
+    	
+    	\section{Result}
+    	A new TABLE namely STDINFO is created and Basic MySQL commands related to TABLE are performed successfully.
+\end{document}
